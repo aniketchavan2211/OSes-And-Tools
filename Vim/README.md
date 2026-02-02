@@ -6,7 +6,7 @@ First install vim on debian based system using apt package manager,
 consider checking for other distros online.
 
 ```bash
-sudo apt -yupdate
+sudo apt -y update
 sudo apt install -y vim
 ```
 
