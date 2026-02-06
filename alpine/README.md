@@ -258,3 +258,188 @@ nano /etc/apk/repositories
 ```
 
 Also enable ***Community Repos Mirrors lists***.
+
+## 1️⃣ OpenRC instead of systemd
+
+### What OpenRC is
+
+OpenRC is an **init system** (PID 1 controller), but it is:
+
+- shell-script based
+    
+- dependency-driven
+    
+- **not** a service manager + logger + IPC bus + everything else
+    
+
+OpenRC does _one job_: start and stop services in order.
+
+### Why Alpine chose it
+
+*systemd*:
+
+- tightly coupled
+    
+- binary-heavy
+    
+- complex state machine
+    
+- assumes full OS boot with privileges
+    
+
+*OpenRC*:
+
+- transparent
+    
+- readable
+    
+- works in containers, chroots, proot
+    
+- trivial to debug (`cat /etc/init.d/service`)
+    
+
+In Alpine:
+
+```bash
+rc-service networking restart 
+rc-update add sshd default
+```
+No D-Bus dependency chain. No hidden activation.
+
+## 2️⃣ musl libc instead of glibc
+
+This is one of Alpine’s most controversial choices.
+
+### What musl is
+
+musl is the **C standard library** (the thing _everything_ links against).
+
+glibc:
+
+- huge
+    
+- feature-rich
+    
+- backwards-compatible forever
+    
+- optimized for enterprise desktops/servers
+    
+
+musl:
+
+- small
+    
+- standards-focused
+    
+- consistent behavior
+    
+- predictable memory usage
+    
+
+### Why this matters
+
+musl advantages:
+
+- tiny binaries
+    
+- faster cold starts (containers!)
+    
+- simpler dynamic linker
+    
+- fewer weird edge cases
+    
+- better static linking
+    
+
+musl trade-offs:
+
+- some precompiled binaries won’t run
+    
+- glibc-specific assumptions break
+    
+- some language runtimes need patches
+    
+
+This is why:
+
+- “random binary from internet” sometimes fails on Alpine
+    
+- container images based on Alpine are _tiny_
+    
+
+Security angle 🔐:
+
+- smaller libc = smaller attack surface
+    
+- less historical baggage
+
+## 3️⃣ BusyBox instead of GNU coreutils
+
+BusyBox is sometimes called:
+
+> “The Swiss Army knife of embedded Linux”
+
+### What BusyBox does
+
+It provides **dozens of commands** in one binary:
+
+- `ls`
+    
+- `cp`
+    
+- `ps`
+    
+- `clear`
+    
+- `mount`
+    
+- `ifconfig`
+    
+
+All via:
+
+`/bin/busybox`
+
+Everything else is symlinks.
+
+### Why Alpine uses it
+
+GNU coreutils:
+
+- feature-rich
+    
+- heavy
+    
+- slower startup
+    
+- massive codebase
+    
+
+BusyBox:
+
+- tiny
+    
+- fast
+    
+- enough for 90% of real work
+    
+- fewer flags, fewer surprises
+
+
+Example difference:
+
+```bash
+ps aux   # works on Debian 
+ps aux   # fails on Alpine 
+ps       # works
+```
+
+This forces you to:
+
+- learn POSIX behavior
+    
+- stop relying on GNU extensions
+
+## Installation on Android Using QEMU
+
+What is QEMU emulator 
