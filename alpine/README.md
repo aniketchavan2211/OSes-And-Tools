@@ -440,6 +440,18 @@ This forces you to:
     
 - stop relying on GNU extensions
 
-## Installation on Android Using QEMU
+## Enable Color Shell Prompt
 
-What is QEMU emulator 
+You will get color_prompt shell script in `/etc/profile.d` dir.
+
+**To enable** :
+```ash
+mv /etc/profile.d/color_prompt.sh.disabled /etc/profile.d/color_prompt.sh
+```
+
+**To disable** :
+```ash
+mv /etc/profile.d/color_prompt.sh /etc/profile.d/color_prompt.sh.disabled
+```
+
+We are changing the `color_prompt.sh` shell script name by enabling it to work.
