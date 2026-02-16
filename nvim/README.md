@@ -1,3 +1,13 @@
+
+Controls only applied on dotfiles.nvim configs:
+
+When multiple file tab(s), you can switch between them by : 
+
+Prefix : `CTRL + a`
+
+- `SHIFT + h` : switch to left 
+- `SHIFT + l` : switch  to right 
+
 ## Netrw : Built-in File Browser
 
 Before plugins, you should learn netrw (Neovim’s built-in file browser).
@@ -16,3 +26,8 @@ This opens a file browser inside Neovim, no plugin.
 - `D` → delete
 - `%` → new file
 - `d` → new directory
+
+Keymaps.nvim :
+
+- Prefix: `CTRL + a`
+- 
