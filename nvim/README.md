@@ -30,4 +30,3 @@ This opens a file browser inside Neovim, no plugin.
 Keymaps.nvim :
 
 - Prefix: `CTRL + a`
-- 

@@ -1,6 +1,6 @@
 # Kali Linux
 
-## Hot Keys / Short Cuts
+## Hot Keys / Shortcuts
 
 ### 🧭 Core GNOME / Workspace Navigation
 
@@ -11,7 +11,6 @@
 - **Super + Page Down** → Workspace below
     
 - **Ctrl + Alt + ↑ / ↓** → Move between workspaces (classic GNOME style)
-    
 
 #### Move a window to another workspace
 
@@ -48,7 +47,6 @@
 #### Open Activities Overview (GNOME brain center)
 
 - **Super** (Windows key)
-    
 
 From here you can:
 
@@ -57,7 +55,6 @@ From here you can:
 - Switch workspaces
     
 - Drag windows between workspaces
-    
 
 #### Open commonly used apps
 
@@ -68,7 +65,6 @@ From here you can:
 - **Super + B** → Toggle browser (usually Firefox if pinned)
     
 - **Alt + F2** → Run command dialog
-    
 
 #### Lock / Log out
 
