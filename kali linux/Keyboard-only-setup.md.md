@@ -10,7 +10,6 @@ Power Off : Not Set
 
 Restart : Not Set
 
-
 Show all Applications : `Super + A`
 
 Show notification bar : `Super + v`
@@ -131,8 +130,15 @@ Default Vertically : `Ctrl + b` + `%`
 
 #### Resize 
 
-Resize up/down/left/right : ***HOLD Prefix ( `Ctrl + a` )*** + capital letters `HJKL` / ←↑↓→ Arrows left/up/down/right 
+Resize up/down/left/right : ***HOLD Prefix ( `Ctrl + a` )*** + capital letters `HJKL` / ←↑↓→ Arrows
 
+Resize left : Prefix ( `Ctrl + a` ) + **Hold `H`**
+
+Resize down : Prefix ( `Ctrl + a` ) + **Hold `J`**
+
+Resize up : Prefix ( `Ctrl + a` ) + **Hold `K`**
+
+Resize right : Prefix ( `Ctrl + a` ) + **Hold `L`**
 ## Mozilla Firefox 
 
 Open Mozilla Firefox : `Super + b`
