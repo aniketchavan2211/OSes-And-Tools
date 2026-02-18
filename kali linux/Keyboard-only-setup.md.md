@@ -156,3 +156,124 @@ Find on page : `/` ( **Forward Slash** )
 open new windows : `Ctrl + n`
 
 Focus on address bar : `Ctrl + l`
+
+### Monkeytype
+
+Restart test : `Tab + Enter`
+
+Command line : `Esc / Ctrl + Shift + p`
+## Neovim
+
+Leader key : `Space`
+
+### Windows Navigation
+
+Windows are like tmux pane.
+
+**Normal Mode**
+
+***Spliting***
+Split windows into Horizontally : `Space / Leader key + sh`
+
+Split windows into Vertically : `Space / Leader key + sv`
+
+***Switching***
+Switch windows to left : `Ctrl + h`
+
+Switch windows to down : `Ctrl + j`
+
+Switch windows to up : `Ctrl + k`
+
+Switch windows to right : `Ctrl + l`
+
+***Resizing***
+Resize windows left : `Leader key + wh`
+
+Resize windows down : `Leader key + wj`
+
+Resize windows up : `Leader key + wk`
+
+Resize windows right : `Leader key + wl`
+
+***Closing***
+Close Windows : `Leader key + wc`
+
+Close others windows : `Leader key + wo`
+
+### Tabs Navigation
+
+Create Tabs : `Leader key + tn`
+
+Switching Left :  `Leader key + th`
+
+Switching Right : `Leader key + tl`
+
+Close Tabs : `Leader key + tc`
+
+### File Actions
+
+File opened in buffer Tabs
+
+**Normal Mode**
+
+Write / Saved file : `Space / Leader key + w`
+
+Switching left opened file buffer : `Shift + h`
+
+Switching right opened file buffer : `Shift + l`
+
+Quit / Exit Neovim : `Space / Leader key + q`
+
+Safe Quit ask if unsaved changes : `Space / Leader key + qq`
+
+Save & Quit : `Space / Leader key + wq`
+
+Force Quit without saving : `Space / Leader key + qx`
+
+### Buffer Navigation
+
+Previous buffer file opened :  `Shift + h`
+
+Default previous buffer opened : `Space / Leader key + bp`
+
+Next buffer file opened : `Shift + l`
+
+Default next buffer opened : `Space / Leader key + bn`
+
+Close File Buffer : `Space / Leader key + bd`
+
+Jump to number opened file : `Space / Leader key 1..9`
+
+### Rust Helpers
+
+cargo check : `Space / Leader key + rc`
+
+cargo build : `Space / Leader key + rb`
+
+cargo run : `Space / Leader key + rr`
+
+cargo format : `Space / Leader key + rf`
+
+### File Explorer
+
+***(Netrw File Explorer)***
+
+**Notice on uppercase and lowercase**
+> Keybindings works only in Netrw File Explorer, if use other you need to config by your own.
+
+Open file explorer : `Space / Leader key + e`
+
+Open File or Directory : `Enter`
+
+Create new file : `%`
+
+Create new directory : `d` 
+
+Rename : `R`
+
+Delete : `D`
+
+Quit Explorer : `Shift + q`
+
+## Obsidian Vault 
+
