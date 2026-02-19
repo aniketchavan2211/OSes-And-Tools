@@ -149,6 +149,10 @@ close a tab : `Ctrl + w`
 
 Reopen a tab : `Ctrl + Shift + t`
 
+Reload Page : `Ctrl + R`
+
+Hard Reload : `Ctrl + Shift + R`
+
 Switch between tab : `Ctrl + Tab`
 
 Switch tab to left : `Ctrl + Page Up`
@@ -163,11 +167,47 @@ open new windows : `Ctrl + n`
 
 Focus on address bar : `Ctrl + l`
 
+### Page Navigations
+
+Page Down : `Space`
+
+Page Up : `Shift + Space`
+
+Go on Top of the Page : `Home`
+
+Go on Bottom of the Page : `End`
+
+Find on Page : `Ctrl + F`
+
+Open Developer Tools : `F12`
+
+Open Developer Tools : `Ctrl + Shift + I`
+
+Open Developer Tools ( Network Tab ): `Ctrl + Shift + E`
+
+Open Developer Tools ( Web Console ) : `Ctrl + Shift + K`
 ### Monkeytype
 
 Restart test : `Tab + Enter`
 
 Command line : `Esc / Ctrl + Shift + p`
+
+### ChatGPT
+
+Show keyboards shortcuts : `Ctrl + /` 
+
+New Chat : `Ctrl + Shift + O`
+
+Search Chat : `Ctrl + K`
+
+Toggle Sidebar : `Ctrl + Shift + S`
+
+Add photos & files : `Ctrl + U` 
+### Github
+
+[GitHub Docs Keyboards Shortcuts](https://docs.github.com/en/get-started/accessibility/keyboard-shortcuts)
+
+Show Github shortcuts : `?`
 ## Neovim
 
 Leader key : `Space`
@@ -282,4 +322,3 @@ Delete : `D`
 Quit Explorer : `Shift + q`
 
 ## Obsidian Vault 
-
