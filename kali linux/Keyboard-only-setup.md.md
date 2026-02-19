@@ -68,7 +68,7 @@ Take a screenshot interactively : `Print`
 
 Take a screenshot of windows : `Alt + Print`
 
-## Gnome Terminal 
+## Gnome Terminal
 
 Open terminal : `Ctrl + Alt + T`
 
@@ -92,13 +92,19 @@ Word Forward : `Alt + F`
 
 Search command : `Ctrl + R`
 
+## File Manager ( Nautilus )
+
+Nautilus is File Explorer available on GNOME Desktop Environment
+
+Open File Manager : `Super + E`
+
 ## Tmux
 
 Custom Prefix : `Ctrl + A`
 
 Default Prefix : `Ctrl + B` ( Unbinded )
 
-### Windows 
+### Windows
 
 Create a new windows : `Prefix + C`
 
@@ -321,4 +327,7 @@ Delete : `D`
 
 Quit Explorer : `Shift + q`
 
-## Obsidian Vault 
+## Obsidian Vault
+
+Open Obsidian Vault : `Shift + Super + O`
+
