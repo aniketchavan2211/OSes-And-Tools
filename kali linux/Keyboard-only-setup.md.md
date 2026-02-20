@@ -100,17 +100,28 @@ Open File Manager : `Super + E`
 
 ## Tmux
 
-Custom Prefix : `Ctrl + A`
+Custom Prefix : `Ctrl + a`
 
-Default Prefix : `Ctrl + B` ( Unbinded )
+Default Prefix : `Ctrl + b` ( Unbinded )
 
+### Copy Mode
+
+Enter into copy mode : `Ctrl + a` + `[`
+
+Selection text : `s` or `Space Bar`
+
+copy-selection : `y` 
+
+Exit Copy Mode :  `q`
+
+Paste from System Clipboard ( **Gnome Terminal** ): `Ctrl + Shift + V` or `Prefix + p`
 ### Windows
 
-Create a new windows : `Prefix + C`
+Create a new windows : `Prefix + c`
 
-Switch to next windows : `Prefix + N`
+Switch to next windows : `Prefix + n`
 
-Switch to previous windows : `Prefix + P`
+Switch to previous windows : `Prefix + p`
 ### Panes
 
 #### Navigation
@@ -145,6 +156,8 @@ Resize down : Prefix ( `Ctrl + a` ) + **Hold `J`**
 Resize up : Prefix ( `Ctrl + a` ) + **Hold `K`**
 
 Resize right : Prefix ( `Ctrl + a` ) + **Hold `L`**
+
+
 ## Mozilla Firefox 
 
 Open Mozilla Firefox : `Super + b`
